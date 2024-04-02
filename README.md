@@ -8,6 +8,12 @@ This extension protects the user by checking every link clicked! Upon clicking t
 
 - Repository created on 02/04/2024! 🎉🎉🎉
 
+## **To-Do List**
+
+-
+-
+-
+
 ## **References**
 
 - 
