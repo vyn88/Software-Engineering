@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Phishing Link Detector",
+    "description": "Automatically prevents you from proceeding upon clicking a malicious link!",
+    "version": "1.0",
+    "icons": {
+        "16": " ",
+        "48": " ",
+        "128": " "
+    },
+    "page_action": {
+        "default_icon": {
+            "16": " ",
+            "48": " ",
+            "128": " "
+        }
+    },
+    "content_scripts": [{}]
+}
