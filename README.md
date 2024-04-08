@@ -10,12 +10,20 @@ This extension protects the user by checking every link clicked! Upon clicking t
 
 ## **To-Do List**
 
+- VirusTotal API 
 -
 -
--
+
+## **Notes [Important]**
+
+- Free version of VirusTotal API used.
+  The Public API is limited to 500 requests per day and a rate of 4 requests per minute.
+  The Public API must not be used in commercial products or services.
+  The Public API must not be used in business workflows that do not contribute new files.
+  You are not allowed to register multiple accounts to overcome the aforementioned limitations.
 
 ## **References**
 
-- 
+- https://docs.virustotal.com/reference/public-vs-premium-api
 - 
 - 
