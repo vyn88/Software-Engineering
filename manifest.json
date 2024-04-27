@@ -4,11 +4,11 @@
     "version": "1.0",
     "description": "Automatically prevents you from proceeding upon clicking a malicious link!",
     "permissions": [
-        "tabs",
         "activeTab",
+        "storage",
+        "tabs",
         "webRequest",
-        "webRequestBlocking",
-        "storage"
+        "webRequestBlocking"
     ],
     "background": {
         "scripts": ["extension.js"],
@@ -33,7 +33,7 @@
         }
     },
     "browser_action": {
-        "default_popup": "popup.html",
+        "default_popup": "index.html",
         "default_icon": "icon.png"
     }
 }
