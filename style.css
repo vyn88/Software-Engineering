@@ -1,15 +1,35 @@
+/* Backgroud */
+body {
+    background-color: #f7deff;
+}
+
 /* Container Class */
 .container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     padding: 20px;
+}
+
+/* Header 1 Text */
+.sec1 {
+    color: #884499;
+}
+
+.sec2 {
+    color: #8888CC;
+}
+
+/* Description Text*/
+.sec3 {
+    color: #BB6688;
 }
 
 /* Switch Class */
 .switch {
     position: relative;
     display: inline-block;
-    width: 56px;
-    height: 30px;
+    width: 60px;
+    height: 34px;
 }
 
 .switch input {
@@ -26,7 +46,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: aquamarine;
+    background-color: gray;
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -38,7 +58,7 @@
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: darkgray;
+    background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
 }
