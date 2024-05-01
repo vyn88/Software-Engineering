@@ -14,11 +14,23 @@
           <span class="sec2">Detector</span>
         </h1>
         <label class="switch">
-            <input type="checkbox">
+            <input type="checkbox" id="toggle" onchange="toggleText()">
             <span class="slider"></span>
         </label>
           <p id="status"></p>
-          <span class="sec3">Hello World.</span>
     </div>
+    <script>
+        function toggleText(){
+        var checkbox = document.getElementById("toggle");
+        var statusParagraph = document.getElementById("status");
+        if (toggle.checked) {
+            statusParagraph.textContent = "Detector is enabled.";
+        } else {
+            statusParagraph.textContent = "Detector is disabled.";
+            }
+        }
+        
+        toggleText();
+    </script>
 </body>
 </html>
