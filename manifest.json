@@ -1,5 +1,5 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "Phishing Link Detector",
     "version": "1.0",
     "description": "Automatically prevents you from proceeding upon clicking a malicious link!",
