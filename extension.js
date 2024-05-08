@@ -6,18 +6,22 @@ const apiKey = "";
 const apiURL = "";
 let scanURL = "";
 
-// Checks and gets active tab URL.
-browser.tabs.query({ active: true, currentWindow: true }, function(tabs){
-    var activeTab = tabs[0];
-    scanURL = activeTab.url;
-    console.log("URL of Active Tab: ", activeTab.url);
-});
+// Checks Active Tab
+function activeTab(tabId, changeInfo, tab) {
+    if (changeInfo.url) {
+        scanURL = changeInfo.url;
+        console.log('Tab URL updated to:', scanURL);
+    }
+}
 
+// If else statement which acts according to web extension's checkbox.
 toggle.addEventListener("change", function() {
     if (toggle.checked) {
+        browser.tabs.onUpdated.addListener(activeTab);
         console.log("Detector enabled, checking every links clicked.");
     } else {
         console.log("Detector disabled, links are not checked.");
+        browser.tabs.onUpdated.removeListener(activeTab);
     }
 });
 
