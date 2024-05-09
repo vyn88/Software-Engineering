@@ -21,15 +21,15 @@
         }
     ],
     "icons": {
-        "16": " ",
-        "48": " ",
-        "128": " "
+        "16": "assets/icon16.png",
+        "48": "assets/icon48.png",
+        "128": "assets/icon128.png"
     },
     "page_action": {
         "default_icon": {
-            "16": " ",
-            "48": " ",
-            "128": " "
+            "16": "assets/icon16.png",
+            "48": "assets/icon48.png",
+            "128": "assets/icon128.png"
         }
     },
     "browser_action": {
