@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,32 +8,34 @@
     <link href="style.css" rel="stylesheet" type="text/css">
     <script src="extension.js"></script>
 </head>
+
 <body>
     <div class="container">
         <h1>
-          <span class="sec1">Phishing Link</span>
-          <span class="sec2">Detector</span>
+            <span class="sec1">Phishing Link</span>
+            <span class="sec2">Detector</span>
         </h1>
         <label class="switch">
             <input type="checkbox" id="toggle" onchange="toggleText()">
             <span class="slider"></span>
         </label>
-          <p id="status"></p>
-          <div id="message"></div>
+        <p id="status"></p>
+        <div id="message"></div>
     </div>
     <script>
         // Switch text function.
-        function toggleText(){
-        var checkbox = document.getElementById("toggle");
-        var statusParagraph = document.getElementById("status");
-        if (toggle.checked) {
-            statusParagraph.textContent = "Detector is enabled.";
-        } else {
-            statusParagraph.textContent = "Detector is disabled.";
+        function toggleText() {
+            var checkbox = document.getElementById("toggle");
+            var statusParagraph = document.getElementById("status");
+            if (toggle.checked) {
+                statusParagraph.textContent = "Detector is enabled.";
+            } else {
+                statusParagraph.textContent = "Detector is disabled.";
             }
         }
-        
+
         toggleText();
     </script>
 </body>
+
 </html>
