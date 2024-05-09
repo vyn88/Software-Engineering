@@ -37,22 +37,23 @@ function scanURL() {
 }
 
 // Function to request URL analysis.
-function analysisURL(analysisID){
+function analysisURL(analysisID) {
     const options = {
         method: 'GET',
         headers: {
             accept: 'application/json',
             'x-apikey': apiKey
-        }};
+        }
+    };
 
     fetch('https://www.virustotal.com/api/v3/analyses/' + analysisID, options)
-    .then(response => response.json())
-    .then(response => {
-        console.log(response);
-        maliciousCount = response.data.attributes.stats.malicious;
-        decider(maliciousCount, targetURL);
-    })
-    .catch(err => console.error(err));
+        .then(response => response.json())
+        .then(response => {
+            console.log(response);
+            maliciousCount = response.data.attributes.stats.malicious;
+            decider(maliciousCount, targetURL);
+        })
+        .catch(err => console.error(err));
 }
 
 // Gives a response based on the analysis result.
