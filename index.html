@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phishing Link Detector</title>
     <link href="style.css" rel="stylesheet" type="text/css">
-    <script src="extension.js"></script>
 </head>
 
 <body>
@@ -16,26 +15,13 @@
             <span class="sec2">Detector</span>
         </h1>
         <label class="switch">
-            <input type="checkbox" id="toggle" onchange="toggleText()">
+            <input type="checkbox" id="toggle">
             <span class="slider"></span>
         </label>
         <p id="status"></p>
-        <div id="message"></div>
+        <div id="message">This text will display the result of the analysis.</div>
     </div>
-    <script>
-        // Switch text function.
-        function toggleText() {
-            var checkbox = document.getElementById("toggle");
-            var statusParagraph = document.getElementById("status");
-            if (toggle.checked) {
-                statusParagraph.textContent = "Detector is enabled.";
-            } else {
-                statusParagraph.textContent = "Detector is disabled.";
-            }
-        }
-
-        toggleText();
-    </script>
+    <script src="popup.js"></script>
 </body>
 
 </html>
