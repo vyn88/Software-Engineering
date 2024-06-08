@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "Link Scanner",
+    "version": "2.0",
+    "description": "Scans every URL upon clicking on it!",
+    "permissions": [
+        "history",
+        "tabs",
+        "activeTab",
+        "webNavigation",
+        "webRequest"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["loading.html"],
+            "matches": ["<all_urls>"]
+        },
+        {
+            "resources": ["blocked.html"],
+            "matches": ["<all_urls>"]
+        }
+    ]
+}
